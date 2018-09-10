@@ -1,0 +1,10 @@
+compressed.*
+*.php
+*.xml
+*.rss
+*.tmp
+*.json
+*.cache
+*.inc
+*.json
+*.curl
