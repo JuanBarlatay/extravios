@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Proyecto Base</title>
-    <base href=".">
+    <base href=“./wp-content/themes/extravios”>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto Base">
     <meta name="author" content="">
