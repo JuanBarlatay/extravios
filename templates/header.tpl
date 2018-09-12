@@ -39,8 +39,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a class="enlace" href="">Buscar perdidos</a>
-                    <a class="enlace" href="">Buscar a su dueño</a>
+                    <a class="enlace" href="perdidos.php">Buscar perdidos</a>
+                    <a class="enlace" href="encontrados.php">Buscar a su dueño</a>
                 </div>
             </div>
         </div>

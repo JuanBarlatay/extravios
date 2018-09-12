@@ -163,3 +163,36 @@ FOOTER .condiciones{
 
 
 /*****************************************************************************/
+
+/***** PASOS *****/
+.pe-paso1 .titulo{
+    text-transform: uppercase;
+    color: rgb(0,175,88);
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+.pe-paso1 .caja{
+    border: 2px solid rgb(220,220,220);
+}
+.pe-paso1 .caja .col-izq{
+    border-right: 2px solid rgb(220,220,220);
+}
+.pe-paso1 .caja .col{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pe-paso1 .imagen{
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: lightgray;
+}
+.pe-paso1 .seccion{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(135,135,135);
+    margin: 20px 0 30px;
+}
+/*****************************************************************************/
