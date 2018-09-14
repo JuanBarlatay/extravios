@@ -165,34 +165,160 @@ FOOTER .condiciones{
 /*****************************************************************************/
 
 /***** PASOS *****/
-.pe-paso1 .titulo{
+.pasos-1 .titulo,.pasos-2 .titulo,.pasos-3 .titulo{
     text-transform: uppercase;
     color: rgb(0,175,88);
     font-size: 28px;
     font-weight: bold;
     margin: 40px 0;
 }
-.pe-paso1 .caja{
+.pasos-1 .caja{
     border: 2px solid rgb(220,220,220);
+    cursor:pointer;
 }
-.pe-paso1 .caja .col-izq{
+.pasos-1 .caja .col-izq{
     border-right: 2px solid rgb(220,220,220);
 }
-.pe-paso1 .caja .col{
+.pasos-1 .caja .col{
     padding-left: 10px;
     padding-right: 10px;
 }
-.pe-paso1 .imagen{
+.pasos-1 .imagen{
     width: 100%;
     height: 250px;
     margin: 10px 0;
     box-sizing: border-box;
     background: lightgray;
 }
-.pe-paso1 .seccion{
+.pasos-1 .seccion{
     text-align: center;
     font-size: 40px;
     color: rgb(135,135,135);
     margin: 20px 0 30px;
+}
+
+.pasos-2 .caja-info{
+    border: 2px solid rgb(220,220,220);
+    margin-bottom: 20px;
+}
+.pasos-2 .primera-caja{
+    text-align: center;
+    background: rgb(220,220,220);
+}
+.pasos-2 .primera-caja .logo{
+    width: 150px;
+    height: 150px;
+    background: gray;
+    margin: 100px 0 30px;
+}
+.pasos-2 .primera-caja .tipo{
+    margin-bottom: 100px;
+    font-size: 26px;
+    color: rgb(135,135,135);
+}
+.pasos-2 .primera-caja:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -10px;
+    width: 0;
+    height: 0;
+    border-left: solid 10px rgb(220,220,220);
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+}
+.pasos-2 .caja-info .col:nth-child(2),.pasos-2 .caja-info .col:nth-child(3),.pasos-2 .caja-info .col:nth-child(4){
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pasos-2 .caja-info .col:nth-child(2),.pasos-2 .caja-info .col:nth-child(3){
+    border-right: 2px solid rgb(220,220,220);
+}
+.pasos-2 UL LI.hidden{
+    display:none;
+}
+.pasos-2 UL LI{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.pasos-2 UL LI.selected, .pasos-2 UL LI:hover{
+    color: rgb(74,89,240);
+}
+.pasos-2 UL LI.disabled,.pasos-2 UL LI.disabled, .pasos-2 UL LI.disabled:hover{
+    color: rgb(220,220,220);
+}
+.pasos-2 .caja-pasos{
+    border: 2px solid rgb(172,172,172);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(172,172,172);
+    font-weight: bold;
+    overflow: hidden;
+}
+.pasos-2 .caja-pasos .col{
+    padding-top:8px;
+    padding-bottom:8px;
+}
+.pasos-2 .caja-pasos .not-selected:after, .pasos-2 .caja-pasos .not-selected:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.pasos-2 .caja-pasos .not-selected:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #ffffff;
+    border-width: 15px;
+    margin-top: -15px;
+}
+.pasos-2 .caja-pasos .not-selected:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-left-color: rgb(172,172,172);
+    border-width: 18px;
+    margin-top: -18px;
+}
+.pasos-2 .caja-pasos .selected{
+    background-color:rgb(172,172,172);
+    color:rgb(255,255,255);
+}
+.pasos-2 .caja-pasos .selected:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -15px;
+    width: 0;
+    height: 0;
+    border-left: solid 10px rgb(172,172,172);
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+}
+.caja-pie .error{
+    color: rgb(189,19,32);
+    font-size: 12px;
+    line-height: 3.2;
+    display: none;
+}
+.caja-pie .boton{
+    background-color: gray;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.caja-pie .boton.completo{
+    background-color: rgb(0,175,88)
 }
 /*****************************************************************************/
