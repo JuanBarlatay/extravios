@@ -60,7 +60,9 @@
         </div>
         <div class="row caja-pie">
           <div class="col"><p class="error">*Tenés que completar todos los pasos antes de continuar</p></div>
-          <div class="col"><p class="boton" onclick="buscar();">Encontrar mi objeto</p></div>
+          <div class="col">
+              <p class="boton" onclick="finalizar();">{if $seccion=='perdidos'}Encontrar mi objeto{else}Completar información adicional{/if}</p>
+          </div>
         </div>
     </div>
 </div>
@@ -85,7 +87,7 @@
       }
       filtro[paso] = nombre;
     }
-    function buscar(){
+    function finalizar(){
       if(filtro[1]=='' ||filtro[2]=='' ||filtro[3]==''){
         $('.caja-pie .error').show();
       }else{

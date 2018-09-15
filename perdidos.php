@@ -14,7 +14,7 @@ if(isset($_GET) && isset($_GET['paso'])){
 	        $numeroPaso = 2;
 	        break;
 	    case 3:
-	        $numeroPaso = 3;
+	        $numeroPaso = '3-perdidos';
 	        break;
 	}
 }
