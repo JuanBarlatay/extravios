@@ -14,10 +14,21 @@
                 </div>
             </div>
         </footer>
-
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/slick.js"></script>
         <script src="js/common.js"></script>
+        {literal}
+          <script>
+              var map;
+              function initMap() {
+                  map = new google.maps.Map(document.getElementById('map'), {
+                      center: {lat: -34.397, lng: 150.644},
+                      zoom: 8
+                  });
+              }
+          </script>
+        {/literal}
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-UX1OG5M8N3HOfEf7Zfh36nYhtQRNWjo&callback=initMap" async defer></script>
     </body>
 </html>

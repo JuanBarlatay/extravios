@@ -22,7 +22,7 @@
   <script type="text/javascript">
     function goToPaso2(tipo){
       console.log(tipo);
-      window.location="{/literal}{$seccion}{literal}.php?paso=2";
+      window.location="{/literal}{$seccion}{literal}.php?paso=2&busco="+tipo;
     }
   </script>
 {/literal}

@@ -9,7 +9,7 @@
         <div class="row caja-info">
           <div class="col primera-caja">
             <img class="logo" src="" />
-            <p class="tipo">Objetos</p>
+            <p class="tipo">{$smarty.get.busco}</p>
           </div>
           <div class="col">
             <ul class="columna1">
@@ -91,7 +91,7 @@
       if(filtro[1]=='' ||filtro[2]=='' ||filtro[3]==''){
         $('.caja-pie .error').show();
       }else{
-         window.location="{/literal}{$seccion}{literal}.php?paso=3";
+         window.location="{/literal}{$seccion}{literal}.php?paso=3&busco={/literal}{$smarty.get.busco}{literal}";
       }
     }
   </script>
