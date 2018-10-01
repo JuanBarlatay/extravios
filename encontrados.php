@@ -1,9 +1,8 @@
 <?php
 require_once('common.php');
-$smarty = new Smarty();
-
-$smarty->assign('seccion','encontrados');
-$smarty->assign('titulo','¿Qué encontraste?');
+require_once('header.php');
+$seccion = 'encontrados';
+$titulo = '¿Qué encontraste?';
 $numeroPaso = 1;
 if(isset($_GET) && isset($_GET['paso'])){
 	switch ($_GET['paso']) {
@@ -19,5 +18,5 @@ if(isset($_GET) && isset($_GET['paso'])){
 	}
 }
 
-//Mostrar el template
-$smarty->display("pasos-$numeroPaso.tpl");
+require_once("pasos-$numeroPaso.php");
+require_once('footer.php');

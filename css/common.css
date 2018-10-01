@@ -125,8 +125,10 @@ HEADER .container-fluid{
 HEADER .logo{
     width: 300px;
     height: 65px;
-    background-color: grey;
+    background: url('../img/logo.png');
     float: left;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 HEADER .login{
     float: right;
@@ -181,7 +183,10 @@ FOOTER .condiciones{
 .home-superior .logo{
     width: 445px;
     height: 317px;
-    background-color: lightgray;
+    background: url('../img/logo-grande.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
 }
 .home-superior .cuadro-perdi, .home-superior .cuadro-buscando{
     color: #ffffff;
@@ -220,11 +225,11 @@ FOOTER .condiciones{
 /***** PASOS *****/
 
 .pasos-1 .caja{
-    border: 2px solid rgb(220,220,220);
+    border: 2px solid rgb(235,239,242);
     cursor:pointer;
 }
 .pasos-1 .caja .col-izq{
-    border-right: 2px solid rgb(220,220,220);
+    border-right: 2px solid rgb(235,239,242);
 }
 .pasos-1 .caja .col{
     padding-left: 10px;
@@ -235,7 +240,15 @@ FOOTER .condiciones{
     height: 250px;
     margin: 10px 0;
     box-sizing: border-box;
-    background: lightgray;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+.pasos-1 .imagen.animales{
+    background-image: url('../img/animales.png');
+}
+.pasos-1 .imagen.objetos{
+    background-image: url('../img/objetos.png');
 }
 .pasos-1 .seccion{
     text-align: center;
@@ -245,18 +258,27 @@ FOOTER .condiciones{
 }
 
 .pasos-2 .caja-info{
-    border: 2px solid rgb(220,220,220);
+    border: 2px solid rgb(235,239,242);
     margin-bottom: 20px;
 }
 .pasos-2 .primera-caja{
     text-align: center;
-    background: rgb(220,220,220);
+    background: rgb(235,239,242);
 }
 .pasos-2 .primera-caja .logo{
     width: 150px;
     height: 150px;
-    background: gray;
-    margin: 100px 0 30px;
+    margin: 100px auto 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pasos-2 .primera-caja .logo.animales{
+    background-image: url('../img/animales.png');
+    background-position: left center;
+}
+.pasos-2 .primera-caja .logo.objetos{
+    background-image: url('../img/objetos.png');
+    background-position: center;
 }
 .pasos-2 .primera-caja .tipo{
     margin-bottom: 100px;
@@ -272,7 +294,7 @@ FOOTER .condiciones{
     margin-top: -10px;
     width: 0;
     height: 0;
-    border-left: solid 10px rgb(220,220,220);
+    border-left: solid 10px rgb(235,239,242);
     border-top: solid 10px transparent;
     border-bottom: solid 10px transparent;
 }
@@ -281,7 +303,7 @@ FOOTER .condiciones{
     padding-bottom: 15px;
 }
 .pasos-2 .caja-info .col:nth-child(2),.pasos-2 .caja-info .col:nth-child(3){
-    border-right: 2px solid rgb(220,220,220);
+    border-right: 2px solid rgb(235,239,242);
 }
 .pasos-2 UL LI.hidden{
     display:none;
@@ -295,7 +317,7 @@ FOOTER .condiciones{
     color: rgb(74,89,240);
 }
 .pasos-2 UL LI.disabled,.pasos-2 UL LI.disabled, .pasos-2 UL LI.disabled:hover{
-    color: rgb(220,220,220);
+    color: rgb(235,239,242);
 }
 .pasos-2 .caja-pasos{
     border: 2px solid rgb(172,172,172);
@@ -371,7 +393,7 @@ FOOTER .condiciones{
 }
 
 .pasos-3 .caja{
-    border: 2px solid rgb(220,220,220);
+    border: 2px solid rgb(235,239,242);
     padding-bottom: 50px;
 }
 .pasos-3 .superior{
@@ -465,7 +487,7 @@ content: "Contactar";
     margin-top: 40px;
 }
 .container-usuario .caja{
-    border: 2px solid rgb(220,220,220);
+    border: 2px solid rgb(235,239,242);
     padding-bottom: 30px;
     margin-bottom: 20px;
 }

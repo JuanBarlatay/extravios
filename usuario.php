@@ -1,11 +1,13 @@
 <?php
 require_once('common.php');
-$smarty = new Smarty();
+require_once('header.php');
 
-$template = 'usuario-datos.tpl';
+$template = 'usuario-datos.php';
 if(isset($_GET['historial'])){
-  $template = 'usuario-historial.tpl';
+  $template = 'usuario-historial.php';
 }
 
-//Mostrar el template
-$smarty->display($template);
+require_once($template);
+
+require_once('footer.php');
+?>
