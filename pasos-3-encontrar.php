@@ -6,12 +6,12 @@
       </div>
     </div>
     <div class="row caja">
-      <div class="col-3">
+      <div class="col-12 col-md-3 col-busco">
         <p class="busco">Encontre un </p>
         <p class="elemento">Iphone 7</p>
         <a href="encontrados.php?paso=2&busco=<?php echo $_GET['busco'];?>" class="volver">Volver al paso anterior</a>
       </div>
-      <div class="col-9">
+      <div class="col-12 col-md-9">
         <div class="row">
           <div class="col-12"><p class="superior">Telefonos > Iphone > Iphone6</div>
         </div>

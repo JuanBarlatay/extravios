@@ -75,6 +75,22 @@ BODY{
     font-weight: bold;
     margin: 40px 0;
 }
+@media (max-width: 767px) {
+    .hidden-mobile{
+        display:none;
+    }
+}
+@media (max-width: 575px) {
+    .height-100{
+        height:auto;
+    }
+    .height-100:first-child{
+        margin-bottom: 10px;
+    }
+    .titulo{
+        font-size: 26px;
+    }
+}
 /*****************************************************************************/
 
 /***** FORMULARIO *****/
@@ -116,19 +132,20 @@ BODY{
     border-left: 0;
     padding-left: 0;
 }
-    /*****************************************************************************/
+/*****************************************************************************/
 
 /***** HEADER *****/
 HEADER .container-fluid{
     padding: 10px 0;
 }
 HEADER .logo{
-    width: 300px;
-    height: 65px;
-    background: url('../img/logo.png');
+    width: 245px;
+    height: 44px;
+    margin-top: 10px;
+    background: url(../img/logo.png);
     float: left;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left bottom;
 }
 HEADER .login{
     float: right;
@@ -157,11 +174,83 @@ HEADER .enlace:first-child{
 }
 HEADER .usuario{
     float: right;
-    margin-top: 49px;
+    margin-top: 40px;
     color: #fff;
 }
 HEADER .usuario .separador{
     padding: 0 10px;
+}
+HEADER .menu-mobile{
+    width: 60%;
+    background: #fff;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: fixed;
+    z-index: 3;
+    right:-60%;
+    top: 0;
+    display: none;
+}
+HEADER .mobile-cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+}
+HEADER .menu-mobile .usuario, HEADER .menu-mobile .login{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+HEADER .menu-mobile .usuario .separador, HEADER .menu-mobile .login .separador{
+    display: none;
+}
+HEADER .menu-mobile .usuario SPAN, HEADER .menu-mobile .login SPAN, HEADER .menu-mobile .usuario A, HEADER .menu-mobile .login SPAN{
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: right;
+    color: black;
+    border-bottom: 1px solid rgb(229,229,229);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: transparent;
+    text-transform: none;
+}
+HEADER .menu-mobile .cerrar-menu{
+    font-size: 32px;
+    float: right;
+    overflow: auto;
+    margin: 20px 0 10px;
+    color: rgb(106,106,106);
+}
+HEADER .menu-mobile .usuario SPAN{
+    color: rgb(0,175,88);
+}
+HEADER .menu-mobile-control{
+    float: right;
+    font-size: 40px;
+    margin: 8px 0;
+    color: white;
+    display: none;
+}
+@media (max-width: 767px) {
+    HEADER .usuario, HEADER .login{
+        display:none;
+    }
+    HEADER .menu-mobile-control{
+        display: block;
+    }
+    HEADER .menu-mobile{
+        display: block;
+    }
+}
+@media (max-width: 575px) {
 }
 /*****************************************************************************/
 
@@ -183,6 +272,7 @@ FOOTER .condiciones{
 .home-superior .logo{
     width: 445px;
     height: 317px;
+    max-width: 100%;
     background: url('../img/logo-grande.png');
     background-repeat: no-repeat;
     background-position: left center;
@@ -196,12 +286,22 @@ FOOTER .condiciones{
     font-weight: bold;
     line-height: 1.3;
     padding-bottom: 25px;
+    position: relative;
 }
 .home-superior .cuadro-perdi .simbolo, .home-superior .cuadro-buscando .simbolo{
     font-size: 220px;
     display: block;
     line-height: 0.6;
     margin-bottom: 40px;
+}
+.home-superior .cuadro-perdi .enlace, .home-superior .cuadro-buscando .enlace{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
 }
 .home-inferior{
     padding-bottom:60px;
@@ -219,7 +319,14 @@ FOOTER .condiciones{
     font-size: 14px;
 
 }
-
+@media (max-width: 991px) {
+    .home-superior .cuadro-perdi, .home-superior .cuadro-buscando {
+        font-size: 22px;
+    }
+    .home-superior .logo {
+        height: 280px;
+    }
+}
 /*****************************************************************************/
 
 /***** PASOS *****/
@@ -241,14 +348,15 @@ FOOTER .condiciones{
     margin: 10px 0;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
+    background-size: cover;
 }
 .pasos-1 .imagen.animales{
     background-image: url('../img/animales.png');
+    background-position: left center;
 }
 .pasos-1 .imagen.objetos{
     background-image: url('../img/objetos.png');
+    background-position: center center;
 }
 .pasos-1 .seccion{
     text-align: center;
@@ -256,7 +364,12 @@ FOOTER .condiciones{
     color: rgb(135,135,135);
     margin: 20px 0 30px;
 }
-
+@media (max-width: 767px) {
+    .pasos-1 .caja .col-izq {
+        border-right: none;
+        border-bottom: 2px solid rgb(235,239,242);
+    }
+}
 .pasos-2 .caja-info{
     border: 2px solid rgb(235,239,242);
     margin-bottom: 20px;
@@ -305,6 +418,9 @@ FOOTER .condiciones{
 .pasos-2 .caja-info .col:nth-child(2),.pasos-2 .caja-info .col:nth-child(3){
     border-right: 2px solid rgb(235,239,242);
 }
+.pasos-2 UL{
+    margin-top: 10px;
+}
 .pasos-2 UL LI.hidden{
     display:none;
 }
@@ -343,7 +459,6 @@ FOOTER .condiciones{
     position: absolute;
     pointer-events: none;
 }
-
 .pasos-2 .caja-pasos .not-selected:after {
     border-color: rgba(255, 255, 255, 0);
     border-left-color: #ffffff;
@@ -387,11 +502,47 @@ FOOTER .condiciones{
     color: #ffffff;
     font-size: 18px;
     cursor: pointer;
+    line-height: 1.2;
 }
 .caja-pie .boton.completo{
     background-color: rgb(0,175,88)
 }
-
+@media (max-width: 767px) {
+    .caja-pie DIV{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pasos-2 .primera-caja {
+        margin-bottom: 20px;
+    }
+    .pasos-2 .primera-caja .logo {
+        margin: 15px auto 15px;
+    }
+    .pasos-2 .primera-caja .tipo {
+        margin-bottom: 15px;
+    }
+    .pasos-2 .col-md-3{
+        border-bottom: solid 2px rgb(235,239,242);
+    }
+    .pasos-2 .col-md-3:last-child{
+        border-bottom: none;
+    }
+    .pasos-2 .primera-caja:after{
+        bottom: -22px;
+        right: calc(50% - 5px);
+        top: auto;
+        border-top: solid 10px rgb(235,239,242);
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+    }
+    .pasos-2 .caja-pasos{
+        font-size: 10px;
+    }
+    .pasos-2 .caja-pasos .col {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+}
 .pasos-3 .caja{
     border: 2px solid rgb(235,239,242);
     padding-bottom: 50px;
@@ -468,6 +619,13 @@ content: "Contactar";
     height: 400px;
     margin-top: 20px;
 }
+@media (max-width: 767px) {
+    .col-busco{
+        padding-bottom: 11px;
+        border-bottom: 2px solid rgb(235,239,242);
+    }
+
+}
 /*****************************************************************************/
 
 /***** USUARIO *****/
@@ -504,7 +662,7 @@ content: "Contactar";
     display:none;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
@@ -583,4 +741,4 @@ content: "Contactar";
     left: calc(50% - 14.5px);
     color: rgba(0,0,0,.2);
     padding: 0 10px;
-}
+}S

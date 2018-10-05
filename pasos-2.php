@@ -6,11 +6,11 @@
       </div>
     </div>
     <div class="row caja-info">
-      <div class="col primera-caja">
+      <div class="col-12 col-sm-12 col-md-3 primera-caja">
         <div class="logo <?php echo $_GET['busco'];?>"></div>
         <p class="tipo"><?php echo $_GET['busco'];?></p>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-4 col-md-3">
         <ul class="columna1">
           <li onclick="seleccionar('telefono',1,this);">Telefonos</li>
           <li onclick="seleccionar('Llaves',1,this);">Llaves</li>
@@ -23,7 +23,7 @@
           <li onclick="seleccionar('Vestimenta',1,this);">Vestimenta</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-4 col-md-3">
         <ul class="columna2">
           <li class="disabled">Seleccionar anterior...</li>
           <li class="hidden" onclick="seleccionar('Iphone',2,this);">Iphone</li>
@@ -36,7 +36,7 @@
           <li class="hidden" onclick="seleccionar('Otros',2,this);">Otros</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-4 col-md-3">
         <ul class="columna3">
           <li class="disabled">Seleccionar anterior...</li>
           <li class="hidden" onclick="seleccionar('1',3,this);">Modelo 1</li>
@@ -58,8 +58,8 @@
       <div class="col not-selected p3">Paso 4</div>
     </div>
     <div class="row caja-pie">
-      <div class="col"><p class="error">*Tenés que completar todos los pasos antes de continuar</p></div>
-      <div class="col">
+      <div class="col-12 col-md-6"><p class="error">*Tenés que completar todos los pasos antes de continuar</p></div>
+      <div class="col-12 col-md-6">
         <p class="boton" onclick="finalizar();">
           <?php $boton = $seccion=='perdidos' ? 'Encontrar mi objeto' : 'Completar información adicional';
           echo $boton;

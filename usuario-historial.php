@@ -9,28 +9,28 @@
       <div class="col-12">
         <h1 class="titulo-caja">Mis publicaciones</h1>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
           <p class="encontrado">Encontrado en:<br/> Villa Laza</p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
           <p class="encontrado">Encontrado en:<br/> Villa Laza</p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
           <p class="encontrado">Encontrado en:<br/> Villa Laza</p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
@@ -42,28 +42,28 @@
       <div class="col-12">
         <h1 class="titulo-caja">Mis reclamados</h1>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
           <p class="encontrado">Encontrado en:<br/> Villa Laza</p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
           <p class="encontrado">Encontrado en:<br/> Villa Laza</p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>
           <p class="encontrado">Encontrado en:<br/> Villa Laza</p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <div class="producto">
           <img class="imagen" src=""/>
           <p class="nombre">Iphone 7 gris</p>

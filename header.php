@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Base</title>
   <base href=".">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
       <div class="row">
         <div class="col">
           <a href="."><div class="logo"></div></a>
-
+          <span class="menu-mobile-control open"><span class="fa fa-bars"></span></span>
           <?php
           $bloque_login = '
             <div class="login">
@@ -47,18 +48,26 @@
               <a href="./usuario.php?historial" title="Mis datos">Mi historial</a>
             </div>
           ';
-
           if(true)
             echo $bloque_login;
           else
             echo $bloque_usuario;
           ?>
-
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid fondo-gris">
+  <div class="menu-mobile">
+    <span class="cerrar-menu"><span class="fa fa-close"></span></span>
+    <?php
+      if(false)
+        echo $bloque_login;
+      else
+        echo $bloque_usuario;
+    ?>
+  </div>
+  <div class="mobile-cover"></div>
+  <div class="container-fluid fondo-gris d-none d-sm-block">
     <div class="container">
       <div class="row">
         <div class="col">

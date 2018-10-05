@@ -6,11 +6,11 @@
       </div>
     </div>
     <div class="row caja">
-      <div class="col col-izq" onclick="goToPaso2('animales');">
+      <div class="col col-sm-12 col-md-6 col-izq" onclick="goToPaso2('animales');">
         <div class="imagen animales"></div>
         <p class="seccion">Animales</p>
       </div>
-      <div class="col col-der" onclick="goToPaso2('objetos');">
+      <div class="col col-sm-12 col-md-6 col-der" onclick="goToPaso2('objetos');">
         <div class="imagen objetos"></div>
         <p class="seccion">Objetos</p>
       </div>
